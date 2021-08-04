@@ -1,0 +1,131 @@
+.NavbarList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #4f78e8;
+    height: 38px;
+    width: 100%;
+    margin: 200px 0 0 0;
+    --List-height:38px
+}
+
+.NavbarList> ul{
+    position: relative;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+
+}
+.NavbarList >ul > li{
+    height: inherit;
+    padding: 0 10px;
+    display: flex;
+ 
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.NavbarList >ul > li> a{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.NavbarList >ul > li:nth-child(2)~li:hover{
+    background-color: #2255E2;
+}
+.NavbarList >ul >li:nth-child(2) a{
+    background-color: white;
+    color: #4f78e8;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.NavbarList>ul > li:nth-child(2) img{
+    height: 20px;
+    width: 20px;
+}
+
+
+.NavbarList>ul > li:nth-child(1){
+    width: 200px;
+    background-color: #1E5BC6;
+}
+.ListSecondLayer{
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 10px #ccc;
+    position: absolute;
+    z-index: 10;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50%) translateY(19px);
+
+}
+.hover{
+    display: none;
+}
+.NavbarList>ul > li:nth-child(1):hover .hover{
+    display: block;
+}
+
+
+.ListSecondLayer>li:hover{
+    color: #fd5151;
+    background-color: #EEEEEE;
+    font-weight: bolder;
+
+    
+}
+.ListThridLayer{
+    display: none;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    overflow-y: scroll;
+
+    position:absolute;
+    top: 0;
+    left: 200px;
+
+}
+
+.ListSecondLayer>li:hover .ListThridLayer{
+    display: block;
+
+}
+.ListThridLayer b{
+    display: inline-block;
+    width: 100%;
+    color: #1e5bc6;
+    text-align: start;
+}
+.ListThridLayer ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.ListThridLayer ul li{
+    margin: 5px;
+    background-color: #EAEEFF;
+    border-radius: 30px;
+    padding: 6px 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.ListThridLayer ul li:hover{
+    background-color: #2E5BFF;
+    color: #fff;
+}
+

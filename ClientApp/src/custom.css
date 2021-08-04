@@ -1,0 +1,30 @@
+.App {
+    width: 100%;
+}
+
+:root {
+    --global-max-width: 1190px
+}
+
+
+
+/* css Reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: '·L³n¥¿¶ÂÅé','Microsoft JhengHei',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+a {
+    text-decoration: none; /* no underline */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}

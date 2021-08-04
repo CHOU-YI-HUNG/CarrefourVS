@@ -1,0 +1,78 @@
+.HomeCardOne {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    /* height: 330px; */
+    height: auto;
+    position: relative;
+    /* border: red 2px solid; */
+    background-color: white;
+    --Card-width: 280px;
+}
+
+.HomeCardOne>img {
+    margin: 20px 0 20px 0;
+}
+
+.HomeCardOne>h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #FF8E0E; */
+    background: -webkit-linear-gradient(left, #ffb52e, #ff8a0b);
+    padding: 5px 5px 5px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.HomeCardOne>h3 div {
+    display: inline-block;
+    overflow: hidden;
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.HomeCardOne>h3 div img {
+    position: relative;
+    left: -125px;
+}
+
+.HomeCardOne .subArea {
+    display: flex;
+    flex-direction: row;
+    /* border: red 3px solid; */
+}
+
+.HomeCardOne .subArea.subCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeCardOne .subArea img {
+    max-width: calc(var(--Card-width)/3);
+    height: auto;
+    margin: 0 0 10px 0;
+}
+
+.HomeCardOne .subArea .subCard p {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 12px;
+    line-height: 25px;
+    color: black;
+    height: 48px;
+}
+.HomeCardOne .subArea .subCard {
+    color: red;
+}

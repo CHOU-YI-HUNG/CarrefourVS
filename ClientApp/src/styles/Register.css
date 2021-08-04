@@ -1,0 +1,95 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register a{
+    color: blue;
+}
+.registerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+.registerTop .logo {
+    width: 75%;
+
+}
+.registerTop .logo img{
+    height: 70px;
+}
+.registerFlow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    width: 100%;
+    height: 100px;
+    /* background-color: #fff; */
+}
+.registerFlow .line{
+    width: 100px;
+    height: 1px;
+    padding: 0;
+    background-color: #808080;
+    /* border:#808080 2px solid; */
+}
+.registerFlow span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #808080;
+    /* background-color: #1E5BC6; */
+    color: white;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50px;
+    
+}
+
+.register form{
+    background-color: #fff;
+    width: 600px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register form .agreeInformationContainer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 12px;
+
+}
+.register form .agreeInformationContainer .agreeInformation{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 ;
+    position: relative;
+    
+}
+.register .birthday{
+    width: 300px;
+    height: 30px;
+}
+
+.register form .agreeInformationContainer .agreeInformation span{
+    transform: translateY(20%);
+}
+.register .button{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #999;
+    color: white;
+    border: 0px;
+    text-align: center;
+
+}
+

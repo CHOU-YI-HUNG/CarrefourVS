@@ -1,0 +1,201 @@
+.HomeBottom {
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.HomeBottom .HomeBottomTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1190px;
+    /* border: red solid 2px; */
+}
+
+
+.HomeBottomMiddle {
+    width: 1190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeBottomMiddleImage {
+    width: 100%;
+    /* border: red 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.HomeBottomMiddleSubArea {
+    margin: 30px 0 30px 0;
+}
+
+.HomeBottomMiddleSubArea .SubCardArea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    /* border: red 2px solid; */
+    position: relative;
+}
+
+.HomeBottomMiddleSubArea .prevArrow, .HomeBottomMiddleSubArea .nextArrow {
+    position: absolute;
+    cursor: pointer;
+}
+
+.HomeBottomMiddleSubArea .prevArrow {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    z-index: 10;
+}
+
+.HomeBottomMiddleSubArea .nextArrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 10;
+}
+
+.HomeBottomMiddleSubArea .Card {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 0 20px 20px;
+    box-sizing:content-box;
+
+    font-size: 16px;
+    box-shadow: 3px 3px 12px rgba(128, 128, 128, 0.2);
+}
+.HomeBottomMiddleSubArea .Card~.Card{
+    margin: 0 0 0 20px;
+} 
+
+.HomeBottomMiddleSubArea .Card figure{
+    cursor: pointer;
+}
+
+.HomeBottomMiddleSubArea .Card img {
+    width: calc(1050px/4);
+}
+
+.PriceAndIcon {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 0 0;
+    width: 100%;
+    /* border: red solid 2px; */
+    position: relative;
+}
+
+.Price {
+    color: red;
+    font-size: 20px;
+}
+.PriceAndIcon a{
+    background-color: #2E5BFF;
+    padding: 0  20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 15px;
+
+}
+.PriceAndIcon .ShppingCartIcon{
+
+
+    transform: scale(0.8);
+    
+}
+.HomeBottomeBottom{
+    width: var(--global-max-width);
+    color: rgb(0, 158, 136);
+    /* border: red solid 1px; */
+}
+.HomeBottomeBottom .promotion-list{
+    /* border: blue solid 1px; */
+    display: flex;
+    flex-direction: row;
+    height: 690px;
+    position: relative;
+}
+.HomeBottomeBottom .promotion-left{
+    background-color: rgb(0, 158, 136);
+    /* border: red solid 1px; */
+    height: 690px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 190px;
+}
+
+.HomeBottomeBottom .promotion-left h2{
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+.HomeBottomeBottom .promotion-left a{
+    color:rgb(0, 158, 136);
+    background-color: #fff;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.HomeBottomeBottom .promotion-left p{
+    font-size: 14px;
+    margin: 20px 0 0 0;
+
+}
+.HomeBottomeBottom .promotion-left img{
+    width: inherit;
+    position:absolute;
+    bottom: 20px;
+    left: 0;
+
+}
+
+.promotion-list .promotion-right {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.promotion-list .promotion-right .BottomCard{
+    height: 343px;
+    width: 248px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.promotion-list .promotion-right .BottomCard:hover{
+    box-shadow: 1px 0 14px rgba(0,0,0,0.4);
+    
+}
+.promotion-list .promotion-right .BottomCard img{
+    width: 200px;
+}
+.promotion-list .promotion-right .BottomCard div p{
+    position:absolute;
+    bottom: 20px;
+    left: 40px;
+    color: red;
+    font-weight: bold;
+}
+.promotion-list .promotion-right .BottomCard div a{
+    background-color: #2E5BFF;
+    border-radius: 20px;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    transform: scale(0.8);
+}

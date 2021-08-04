@@ -1,0 +1,11 @@
+div.Icon{
+    display: inline-block;
+    overflow: hidden;
+    width: 26px;
+}
+
+div.Icon  img {
+    position: relative;
+    left: -200px;
+    top: 5px;
+}

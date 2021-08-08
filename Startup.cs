@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Project2.Models;
 
 namespace Project2
 {
@@ -28,6 +30,9 @@ namespace Project2
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.AddDbContext<CarrefourContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("CarrefourDatabase")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +68,8 @@ namespace Project2
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseReactDevelopmentServer(npmScript: @"http://localhost:3000");
+                    //spa.UseReactDevelopmentServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer(@"http://localhost:3000/");
                 }
             });
         }

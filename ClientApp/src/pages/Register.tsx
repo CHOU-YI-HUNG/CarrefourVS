@@ -6,6 +6,7 @@ import CheckBox from '../components/Other/CheckBox'
 import Input from '../components/Other/Input';
 import axios from 'axios';
 import '../styles/Register.css';
+import { Console } from 'console';
 function Register() {
     const [flow, setFlow] = useState(0)
     const [phone, setPhone] = useState('0')
@@ -31,12 +32,14 @@ function Register() {
         }else if(flow===1){
             if (name!=''&& email!=''&& password!=''&&resetPassword!='') {
                 setFlow(flow + 1)
-                axios.post('http://localhost:3001/auth/',{
+                axios.post('https://localhost:5001/api/Register',{
                     username:name,
                     password:password, 
                     phone:phone,
                     email:email,
-                    birthday:birthday,               
+                    birthday: birthday,
+                }).then((respose) => {
+                    console.log(respose.data)
                 })
             }   
         }

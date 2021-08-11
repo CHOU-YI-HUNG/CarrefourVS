@@ -1,4 +1,5 @@
-import React, { useState,useContext } from 'react';
+import { useState, useContext } from 'react';
+import * as React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Input from '../components/Other/Input';
 import axios from 'axios';
@@ -12,9 +13,10 @@ function Login() {
 
    
     
-    const login = () => {
+    const login = () => {   
         const data = { username: username, password: password };
-        axios.post("http://localhost:3001/auth/login", data).then((response) => {
+        //"http://localhost:3001/auth/login"
+        axios.post("https://localhost:5001/api/Login", data).then((response) => {
             if (response.data.error) {
                 alert(response.data.error);
             } else {

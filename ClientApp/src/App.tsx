@@ -21,25 +21,25 @@ function App() {
     })
 
     const [switchNavbar, setSwitchNavbar] = useState(false);
-    //useEffect(() => {
-    //    axios.get('http://localhost:3001/auth/auth', {
-    //        headers: {
-    //            accessToken: localStorage.getItem("accessToken"),
-    //        }
-    //    }).then((response) => {
-    //        if (response.data.error) {
-    //            setAuthState({ ...authState, status: false })
-    //        }
-    //        else {
-    //            setAuthState({
-    //                username: response.data.username,
-    //                id: response.data.id,
-    //                status: true
-    //            })
-    //        }
-    //    })
+    useEffect(() => {
+        axios.get('https://localhost:5001/api/Auth', {
+            headers: {
+                token: localStorage.getItem("accessToken"),
+            }
+        }).then((response) => {
+            if (response.data.error) {
+                setAuthState({ ...authState, status: false })
+            }
+            else {
+                setAuthState({
+                    username: response.data.username,
+                    id: response.data.id,
+                    status: true
+                })
+            }
+        })
 
-    //}, [])
+    }, [])
 
 
 

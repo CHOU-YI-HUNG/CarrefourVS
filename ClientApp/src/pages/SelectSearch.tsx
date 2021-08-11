@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import {useParams} from 'react-router-dom'
 

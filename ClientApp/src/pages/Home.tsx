@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import * as React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import HomeMiddle from '../components/HomeComponent/HomeMiddle'
 import HomeBottom from '../components/HomeComponent/HomeBottom'
